@@ -19,7 +19,7 @@ import io.flutter.plugins.GeneratedPluginRegistrant;
 
 public class MainActivity extends AppCompatActivity {
     public static final String FLUTTER_ENGINE_ID = "1";
-
+    public static final String BANNER_URL = "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 if (call.method.equals("set_config")){
                     JSONObject json = new JSONObject();
                     try {
-                        json.put("partner_code",""); // partner code vps
-                        json.put("color","#01AD52"); // hex color
+                        json.put("partner_code",""); // partner code
+                        json.put("color","#FF0000"); // hex color
                         json.put("device_type",""); // device type
-                        json.put("logo",""); // logo/banner
+                        json.put("logo", BANNER_URL); // link png/jpg for logo/banner
                         json.put("logo_ratio",1125/396.0); // ratio for logo/banner
                     } catch (JSONException e) {
                         System.out.println("TAG " + e);

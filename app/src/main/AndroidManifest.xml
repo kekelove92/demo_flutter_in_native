@@ -25,7 +25,7 @@
         </activity>
 
         <activity
-            android:name="io.flutter.embedding.android.FlutterActivity"
+            android:name=".ConfigFlutterActivity"
             android:theme="@style/Theme.DemoFlutter"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
